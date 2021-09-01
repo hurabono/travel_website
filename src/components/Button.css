@@ -26,6 +26,7 @@
 
 .btn__outline:hover {
   color: #242424;
+  background-color: #fafafa;
 }
 
 .btn__medium {
