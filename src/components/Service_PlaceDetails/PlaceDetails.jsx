@@ -9,8 +9,9 @@ import useStyles from './styles';
 function PlaceDetails({place, selected, refProp}) {
       const classes = useStyles();
 
-      if(selected) refProp?.current?.scrollIntoView( { behavior: "smooth", block:"end"} )
-      
+      if(selected) refProp?.current?.scrollIntoView( { block:"start"} )
+      window.scrollTo(0, 0);
+
       return (
             <Card elevation = {6}>
                   <CardMedia 

@@ -4,6 +4,7 @@
 }
 
 h1 {
+  margin-top: 32px;
   text-align: center;
 }
 
@@ -30,6 +31,7 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .cards__item__link {
@@ -45,9 +47,9 @@ h1 {
 }
 
 .cards__item__pic-wrap {
-  position: relative;
+  position: static;
   width: 100%;
-  padding-top: 67%;
+  padding-top: 100%;
   overflow: hidden;
 }
 
@@ -59,7 +61,8 @@ h1 {
 .cards__item__pic-wrap::after {
   content: attr(data-category);
   position: absolute;
-  bottom: 0;
+  top: 25px;
+  left: 20px;
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
@@ -68,6 +71,7 @@ h1 {
   color: #fff;
   background-color: #1f98f4;
   box-sizing: border-box;
+  border-radius: 33px;
 }
 
 .cards__item__img {
@@ -90,13 +94,16 @@ h1 {
 }
 
 .cards__item__info {
+  z-index: 1;
+  position: relative;
   padding: 20px 30px 30px;
 }
 
 .cards__item__text {
-  color: #252e48;
-  font-size: 18px;
+  color: #fff;
+  font-size: 22px;
   line-height: 24px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -114,5 +121,15 @@ h1 {
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+
+  .cards {
+    padding: 0;
+    background: #fff;
+  }
+
+  h1 {
+    margin-top: 41px;
+    text-align: center;
   }
 }

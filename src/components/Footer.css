@@ -129,12 +129,21 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
 }
 
 .website-rights {
+  display: flex;
   color: #fff;
   margin-bottom: 16px;
+  justify-content: center;
+}
+
+.social-media-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media screen and (max-width: 820px) {

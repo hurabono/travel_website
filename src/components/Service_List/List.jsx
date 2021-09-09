@@ -7,7 +7,6 @@ import PlaceDetails from '../Service_PlaceDetails/PlaceDetails';
 
 function List({places, childClicked, isLoading, type, setType, rating, setRating}) {
       const classes = useStyles();
-
       const [elementRef, setElementRef] = useState([]);
 
       useEffect(() => {
@@ -43,7 +42,6 @@ function List({places, childClicked, isLoading, type, setType, rating, setRating
                                     <MenuItem value= {0}> View All </MenuItem>
                                     <MenuItem value= {3}> Above 3.0 </MenuItem>
                                     <MenuItem value= {4}> Above 4.0 </MenuItem>
-                                    <MenuItem value= {4.5}> Above 4.5</MenuItem>
                               </Select>
                   </FormControl>
                   <Grid container spacing ={3} className={classes.list}>

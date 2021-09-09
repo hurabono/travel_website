@@ -37,10 +37,10 @@ function Services() {
   }, []);
 
   useEffect(() => {
-    const filteredPlaces = places.filter((place) => place.rating > rating);
+    const filtered = places.filter((place) => Number(place.rating) > rating);
 
-    setFilteredPlaces(filteredPlaces);
-  }, [rating]);
+    setFilteredPlaces(filtered);
+  }, [places, rating]);
 
   // Loading and getting place the data around sw, and ne
   useEffect(() => {
@@ -57,14 +57,15 @@ function Services() {
         setPlaces(data?.filter((place) => place.name && place.num_reviews > 0));
         setIsLoading(false);
         setFilteredPlaces([]);
+        setRating("");
       });
     }
   }, [type, bounds]);
 
   return (
     <>
-      <Header setCoordinates={setCoordinates} />
       <Navbar />
+      <Header setCoordinates={setCoordinates} />
       <Grid container spacing={0} style={{ width: "100%" }}>
         <Grid item xs={12} md={4}>
           <List

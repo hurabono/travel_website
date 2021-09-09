@@ -76,7 +76,7 @@ function Footer() {
       </div>
 
       <section className="social-media">
-        <div className="social=media-wrap">
+        <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
               TRIPF

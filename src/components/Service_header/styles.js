@@ -39,8 +39,9 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: { width: "20ch" },
   },
   toolbar: {
-    display: "block",
+    display: "flex",
     textAlign: "center",
+    flexDirection: "column",
     margin: "12px 0",
     [theme.breakpoints.up("sm")]: {
       position: "relative",

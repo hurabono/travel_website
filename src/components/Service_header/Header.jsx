@@ -3,7 +3,6 @@ import { Autocomplete } from '@react-google-maps/api';
 import {AppBar, Toolbar, Typography, InputBase, Box} from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import useStyles from "./styles";
-import Navbar from '../Navbar';
 
 
 function Header({setCoordinates}) {
@@ -22,7 +21,7 @@ function Header({setCoordinates}) {
 
       return (
             <div >
-                  <AppBar position = "sticky">
+                  <AppBar position = "static">
                               <Toolbar className = {classes.toolbar}>
                                           <Typography variant ="h5" className = {classes.title}>
                                                       Travel Information
