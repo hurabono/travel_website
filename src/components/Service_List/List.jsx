@@ -5,10 +5,9 @@ import useStyles from './styles';
 import PlaceDetails from '../Service_PlaceDetails/PlaceDetails';
 
 
-function List({places, childClicked, isLoading}) {
+function List({places, childClicked, isLoading, type, setType, rating, setRating}) {
       const classes = useStyles();
-      const [type, setType] = useState('restaurants');
-      const [rating, setRating] = useState('');
+
       const [elementRef, setElementRef] = useState([]);
 
       useEffect(() => {
@@ -33,6 +32,8 @@ function List({places, childClicked, isLoading}) {
                               <InputLabel> </InputLabel>
                               <Select value ={type} onChange = {e => setType(e.target.value)} >
                                     <MenuItem value="restaurants"> Restaurants</MenuItem>
+                                    <MenuItem value="hotels">Hotels</MenuItem>
+                                    <MenuItem value="attractions">Attractions</MenuItem>
                               </Select>
                   </FormControl>
 

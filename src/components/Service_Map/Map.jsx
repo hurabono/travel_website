@@ -1,25 +1,26 @@
 import React from 'react';
 import GoogleMapReact from 'google-map-react';
-import { ClickAwayListener, Paper, Typography, useMediaQuery } from '@material-ui/core';
+import { Paper, Typography, useMediaQuery } from '@material-ui/core';
 import LocationOnOutlinedIcon from '@material-ui/icons/LocationOnOutlined';
 import Rating from '@material-ui/lab/Rating';
 
-import useStyles from './styles.js';
+import useStyles from './styles';
+import mapStyles from './mapStyles';
 
-function Map({setCoordinates, setBounds, coordinates, places, setChildClicked }) {
+function Map({setCoordinates, setBounds, coordinates, places, setChildClicked, weatherData }) {
 
       const classes = useStyles();
       const isDesktop = useMediaQuery('(min-width:600px)');
 
+
       return (
             <div className = {classes.mapContainer}>
                   <GoogleMapReact
-                  bootstrapURLKeys = {{key: 'AIzaSyDSGn-cpx8NOTdXun_ZU_lJN8nqIMCnCFE'}}
+                  bootstrapURLKeys = {{key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY}}
                   defaultCenter = {coordinates}
                   center = {coordinates}
-                  defaultZoom = {17}
-                  margin = { [ 50,50,50,50 ] }
-                  options = {''}
+                  defaultZoom = {15}
+                  options = {{disableDefaultUI: true, zoomControl: true, styles: mapStyles }}
 
                   onChange = { e => {
                         setCoordinates({
@@ -64,6 +65,12 @@ function Map({setCoordinates, setBounds, coordinates, places, setChildClicked })
 
                               </div>
 
+                        ))}
+
+                        {weatherData?.list?.map( (data, index) => (
+                              <div key = {index} lat = {data.coord.lat} lng = {data.coord.lon}>
+                                          <img height = {100} src = {`https://openweathermap.org/img/w/${data.weather[0].icon}.png`}   alt = {weatherData.name}/>
+                              </div>
                         ))}
 
                   </GoogleMapReact>

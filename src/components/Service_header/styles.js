@@ -2,7 +2,6 @@ import { alpha, makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
   title: {
-    display: "none",
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
@@ -40,7 +39,15 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: { width: "20ch" },
   },
   toolbar: {
-    display: "flex",
-    justifyContent: "space-between",
+    display: "block",
+    textAlign: "center",
+    margin: "12px 0",
+    [theme.breakpoints.up("sm")]: {
+      position: "relative",
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      minHeight: "120px",
+    },
   },
 }));

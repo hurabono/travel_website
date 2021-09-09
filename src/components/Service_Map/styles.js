@@ -6,10 +6,10 @@ export default makeStyles(() => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    width: "100px",
+    width: "120px",
   },
   mapContainer: {
-    height: "95vh",
+    height: "100vh",
     width: "100%",
   },
   markerContainer: {
