@@ -48,14 +48,6 @@ function Footer() {
           </div>
 
           <div className="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Agency</Link>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Influencer</Link>
-          </div>
-
-          <div className="footer-link-items">
             <h2>About Us</h2>
             <Link to="/">How it works</Link>
             <Link to="/">Testimonials</Link>
