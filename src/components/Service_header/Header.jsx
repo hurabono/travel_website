@@ -8,6 +8,7 @@ import useStyles from "./styles";
 function Header({setCoordinates}) {
       const [autocomplete, setAutocomplete] = useState(null);
       const classes = useStyles();
+
       const onLoad = (autoComplete)=>{
                   setAutocomplete(autoComplete);
       }
@@ -18,6 +19,9 @@ function Header({setCoordinates}) {
 
             setCoordinates({lat,lng});
       }
+ 
+
+
 
       return (
             <div >

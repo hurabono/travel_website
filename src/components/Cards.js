@@ -7,7 +7,7 @@ function Cards() {
     <div className="cards">
       <h1>Explore nearby</h1>
       <div className="cards__container">
-        <div className="cards__wrapper">
+        <div className="cards__wrapper ">
           <ul className="cards__items">
             <CardItem
               src="/images/img-9.jpg"

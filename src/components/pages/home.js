@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import Banner from "../Banner";
+import TravelBooking from "../BookingComponent/TravelBooking";
 import Cards from "../Cards";
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
@@ -12,6 +13,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <Cards />
+      <TravelBooking />
       <Banner />
       <Footer />
     </>

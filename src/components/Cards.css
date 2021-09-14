@@ -9,10 +9,6 @@ h1 {
 }
 
 .cards__container {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  max-width: 1280px;
   width: 90%;
   margin: 0 auto;
 }
@@ -102,11 +98,11 @@ h1 {
 
 .cards__item__text {
   color: #fff;
-  font-size: 32px;
+  font-size: 1.8rem;
   line-height: 35px;
   text-align: center;
   text-transform: uppercase;
-  margin: 30px;
+  margin: 30px 0px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -118,6 +114,7 @@ h1 {
 @media only screen and (min-width: 1200px) {
   .cards__items {
     display: flex;
+    justify-content: center;
   }
 }
 
