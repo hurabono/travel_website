@@ -2,23 +2,34 @@ import React from "react";
 import { Button } from "./Button";
 import "./banner.css";
 import BannerItem from "./BannerItem";
+import { Typography } from "@material-ui/core";
 
 function Banner() {
   return (
-    <div>
+    <div className="container">
       <div className="banners__container">
-        <h1>Covid 19 news and information</h1>
-
+        <Typography className="title" variant="h5" component="h2">
+          Covid 19 news and information
+        </Typography>
         <div className="banner__wrapper">
           <div className="discribe_section">
-            <h2>title section</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+            <Typography className="container_title" variant="h3" component="h2">
+              Covid 19 news and information
+            </Typography>
+            <p className="covid__description">
+              Travellers entering Canada, regardless of citizenship, must follow
+              testing and quarantine requirements to keep everyone safe. Under
+              certain conditions, you may be exempt from some requirements.
+              <br />
+              Youmust:
+              <ol>
+                <li>wear a mask at all times when in public spaces</li>
+                <li>
+                  maintain a list of all close contacts for your first 14 days
+                </li>
+                <li>monitor yourself for signs and symptoms of COVID-19</li>
+              </ol>
             </p>
-            <Button style={{ color: "red" }}>View details</Button>
           </div>
 
           <div className="image_section">

@@ -21,7 +21,11 @@ export default makeStyles((theme) => ({
   },
 
   title: {
-    margin: "10px 50px",
+    margin: "10px 0px",
     textAlign: "left",
+    [theme.breakpoints.up("md")]: {
+      margin: "10px 50px",
+      textAlign: "left",
+    },
   },
 }));
