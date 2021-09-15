@@ -10,7 +10,6 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range';
 
-import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 function TravelBooking() {
@@ -127,11 +126,11 @@ function TravelBooking() {
 
                                                                   {/* buttons setting */}
                                                                   <div className = {classes.buttonWrapper}>
-                                                                        <Link to="/">
+                                                                        
                                                                               <Button onClick = {resetInput} color="secondary" className = {classes.reserveButton}>
                                                                               CANCEL
                                                                               </Button>
-                                                                        </Link>
+                                                                          
 
                                                                               <Button  onClick = {Reserve} color="primary" className = {classes.reserveButton}> 
                                                                                     RESERVE

@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, Toolbar, Typography, Box } from "@material-ui/core";
+import { Typography, Box } from "@material-ui/core";
 import useStyles from "./style";
 import { useLocation } from "react-router";
 import { format } from "date-fns";
@@ -7,7 +7,6 @@ import { format } from "date-fns";
 function ReserveHeader() {
   const classes = useStyles();
   const location = useLocation();
-  console.log(location.state.location);
 
   const placeName = location.state.location;
   const startDate = location.state.startDate;
@@ -30,14 +29,6 @@ function ReserveHeader() {
         </Typography>
 
         <p className={classes.topInfo}> {range}</p>
-        <div>
-          <ul className={classes.itemWrapper}>
-            <li className={classes.filters}>Cancellation Flexibility</li>
-            <li className={classes.filters}>Popular Event</li>
-            <li className={classes.filters}>Promotion</li>
-            <li className={classes.filters}>Limited time offer</li>
-          </ul>
-        </div>
       </Box>
     </>
   );

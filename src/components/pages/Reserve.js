@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "../../App.css";
-import TravelBooking from "../BookingComponent/TravelBooking";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ReserveHeader from "../Reserve_header/ReserveHeader";
+import ReserveApp from "../Reserve_list/ReserveApp";
 
 function Reserve() {
   useEffect(() => {
@@ -13,6 +13,7 @@ function Reserve() {
     <>
       <Navbar />
       <ReserveHeader />
+      <ReserveApp />
       <Footer />
     </>
   );

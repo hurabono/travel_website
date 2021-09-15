@@ -1,6 +1,6 @@
 .cards {
-  padding: 4rem;
-  background: #fff;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 h1 {
