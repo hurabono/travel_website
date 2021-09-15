@@ -6,9 +6,12 @@ import Cards from "../Cards";
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
 import Navbar from "../Navbar";
+import ThingsTodo from "../ThingsTodo";
 import ThreeCards from "../ThreeCards";
 
 function Home() {
+  window.scrollTo(0, 0);
+
   return (
     <>
       <Navbar />
@@ -17,6 +20,7 @@ function Home() {
       <Cards />
       <TravelBooking />
       <Banner />
+      <ThingsTodo />
       <Footer />
     </>
   );

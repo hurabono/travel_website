@@ -13,11 +13,10 @@
 .banners__container .title {
   text-transform: uppercase;
   display: inline-block;
-  margin: 0px 22px;
 }
 
 .container {
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
 }
 
 .discribe_section {
@@ -100,5 +99,9 @@
     position: relative;
     right: 0px;
     top: 0px;
+  }
+
+  .container {
+    margin-bottom: 10vh;
   }
 }

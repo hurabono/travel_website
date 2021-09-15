@@ -13,7 +13,7 @@ export default makeStyles((theme) => ({
 
   cardWrapper: {
     width: "90%",
-    margin: "2rem auto",
+    margin: "4rem auto",
     maxWidth: "1280px",
   },
   CardItems: {

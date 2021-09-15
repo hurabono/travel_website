@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "./Button";
 import "./banner.css";
 import BannerItem from "./BannerItem";
 import { Typography } from "@material-ui/core";
@@ -22,14 +21,14 @@ function Banner() {
               certain conditions, you may be exempt from some requirements.
               <br />
               Youmust:
-              <ol>
-                <li>wear a mask at all times when in public spaces</li>
-                <li>
-                  maintain a list of all close contacts for your first 14 days
-                </li>
-                <li>monitor yourself for signs and symptoms of COVID-19</li>
-              </ol>
             </p>
+            <ol>
+              <li>wear a mask at all times when in public spaces</li>
+              <li>
+                maintain a list of all close contacts for your first 14 days
+              </li>
+              <li>monitor yourself for signs and symptoms of COVID-19</li>
+            </ol>
           </div>
 
           <div className="image_section">

@@ -86,7 +86,7 @@ export default makeStyles((theme) => ({
   backGround: {
     backgroundColor: "#A5D8FF",
     padding: 70,
-    marginBottom: "100px",
+    marginBottom: "150px",
   },
   searchIcon: {
     backgroundColor: "#A5D8FF",
