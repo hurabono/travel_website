@@ -72,7 +72,7 @@ function TravelBooking() {
 
             
       return (
-            <div >
+            <div  id="nearBy">
                   <Box position = "static" className = {classes.backGround} style={img.backgroundContainer}>
                               <Toolbar className = {classes.toolbar}>
                                           <Typography variant ="h2" className = {classes.header} >

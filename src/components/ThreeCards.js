@@ -14,10 +14,6 @@ import { Link } from "react-router-dom";
 function ThreeCards() {
   const classes = useStyles();
 
-  <Typography className={classes.title} variant="h5" component="h2">
-    EXPLORE NEAR BY
-  </Typography>;
-
   return (
     <>
       <Grid container className={classes.cardWrapper} maxWidth="sm">

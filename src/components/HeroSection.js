@@ -5,7 +5,7 @@ import "../App.css";
 
 function HeroSection() {
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="home">
       <video src="/videos/Driving - 536.mp4" autoPlay loop muted />
       <h1>ARE YOU READY TO LEAVE?</h1>
       <p>EXPLORE NEAR ME</p>

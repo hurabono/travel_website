@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import "./Navbar.css";
 import useStyles from "./ThreeCardsStyle";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const classes = useStyles();
@@ -41,27 +41,23 @@ function Navbar() {
 
           <ul className={onClick ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/#home" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
               <Link
-                to="./Services"
+                to="#nearBy"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Services
+                Trip
               </Link>
             </li>
 
             <li className="nav-item">
-              <Link
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 About us
               </Link>
             </li>
