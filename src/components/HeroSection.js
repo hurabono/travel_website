@@ -17,14 +17,6 @@ function HeroSection() {
         >
           GET STARTED!
         </Button>
-
-        <Button
-          className="btns"
-          buttonStyle="btn__primary"
-          buttonSize="btn__large"
-        >
-          WATCH TRAILER <i className="far fa-play-circle" />
-        </Button>
       </div>
     </div>
   );

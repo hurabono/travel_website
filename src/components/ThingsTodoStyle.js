@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
     maxWidth: "auto",
     margin: "0px 10px",
     [theme.breakpoints.up("sm")]: {
-      maxWidth: 320,
+      maxWidth: 350,
       margin: "0px 20px",
     },
   },
@@ -27,16 +27,20 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: "90%",
       margin: "2rem auto",
-      maxWidth: "1920px",
+      maxWidth: "1280px",
     },
   },
 
   title: {
-    width: "1280px",
-    display: "block",
     fontSize: "1.2rem",
-    margin: "20px auto",
-    textAlign: "left",
-    marginLeft: "20px",
+    marginLeft: "22px",
+    margin: "30px auto",
+
+    [theme.breakpoints.up("sm")]: {
+      width: "1160px",
+      display: "block",
+      fontSize: "1.2rem",
+      margin: "30px auto",
+    },
   },
 }));

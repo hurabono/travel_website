@@ -31,19 +31,33 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>About Us</h2>
+            <Link to="/">
+              <h2>About Us</h2>
+            </Link>
           </div>
 
           <div className="footer-link-items">
-            <h2>Contact Us</h2>
+            <Link to="/">
+              <h2>Contact Us</h2>
+            </Link>
           </div>
 
           <div className="footer-link-items">
-            <h2>About Us</h2>
+            <Link to="/">
+              <h2>Terms and policy</h2>
+            </Link>
           </div>
 
           <div className="footer-link-items">
-            <h2>Social Media</h2>
+            <Link to="/">
+              <h2>customer support</h2>
+            </Link>
+          </div>
+
+          <div className="footer-link-items">
+            <Link to="/">
+              <h2>contact us</h2>
+            </Link>
           </div>
         </div>
       </div>

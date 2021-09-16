@@ -13,6 +13,8 @@
 .banners__container .title {
   text-transform: uppercase;
   display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 17px;
 }
 
 .container {
@@ -32,15 +34,19 @@
   z-index: 1;
 }
 
+.discribe_section ol {
+  padding: 10px 35px;
+}
+
 .discribe_section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 20px 0px;
   text-transform: uppercase;
 }
 .discribe_section p {
   font-size: 1rem;
   font-weight: 300;
-  padding: 30px;
+  padding: 10px 30px;
   line-height: 2;
   text-align: left;
   list-style-type: disc;

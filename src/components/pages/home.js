@@ -10,8 +10,6 @@ import ThingsTodo from "../ThingsTodo";
 import ThreeCards from "../ThreeCards";
 
 function Home() {
-  window.scrollTo(0, 0);
-
   return (
     <>
       <Navbar />

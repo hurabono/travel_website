@@ -17,12 +17,17 @@ export default makeStyles((theme) => ({
     maxWidth: "1280px",
   },
   CardItems: {
-    padding: theme.spacing(2),
+    paddingTop: "18px",
+    paddingBottom: "12px",
+    [theme.breakpoints.up("md")]: {
+      padding: theme.spacing(2),
+    },
   },
 
   title: {
     margin: "10px 0px",
     textAlign: "left",
+    fontSize: "1.2rem",
     [theme.breakpoints.up("md")]: {
       margin: "10px 50px",
       textAlign: "left",
