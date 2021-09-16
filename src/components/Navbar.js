@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import { Button } from "@material-ui/core";
 import "./Navbar.css";
+import useStyles from "./ThreeCardsStyle";
 
 function Navbar() {
+  const classes = useStyles();
+
   const [onClick, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -45,7 +48,7 @@ function Navbar() {
 
             <li className="nav-item">
               <Link
-                to="/service"
+                to="./Services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -59,13 +62,13 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Products
+                About us
               </Link>
             </li>
 
             <li>
               <Link
-                to="/sign-up"
+                to="/"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
@@ -73,7 +76,15 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn__outline">SIGN UP</Button>}
+          {button && (
+            <Button
+              className={classes.nav_button}
+              variant="outlined"
+              size="large"
+            >
+              SIGN UP
+            </Button>
+          )}
         </div>
       </nav>
     </>

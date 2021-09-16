@@ -1,11 +1,16 @@
 import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
   root: {
-    maxWidth: 350,
-    margin: "0px 20px",
+    maxWidth: 370,
+    margin: "15px 20px",
+
+    [theme.breakpoints.up("md")]: {
+      maxWidth: 350,
+      margin: "10px 20px",
+    },
   },
   media: {
-    height: 240,
+    height: 340,
   },
   CardSection: {
     margin: "30px 0px",
@@ -24,6 +29,12 @@ export default makeStyles((theme) => ({
     },
   },
 
+  CardButton: {
+    backgroundColor: "#e9ecef",
+    color: "#495057",
+    border: "1px solid #adb5bd",
+  },
+
   title: {
     margin: "10px 0px",
     textAlign: "left",
@@ -32,5 +43,12 @@ export default makeStyles((theme) => ({
       margin: "10px 50px",
       textAlign: "left",
     },
+  },
+
+  //navigation button
+
+  nav_button: {
+    border: "1px solid #fafafa",
+    color: "#fafafa",
   },
 }));

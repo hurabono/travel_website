@@ -1,0 +1,47 @@
+.travel_container {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #fafafa;
+}
+
+.travel_banner__wrapper {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.travel_discribe_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  margin: 22px;
+}
+
+.travel_discribe_section .travel_title {
+  text-align: center;
+  padding: 0px 10rem;
+}
+
+.travel_discribe_section h2 {
+  font-size: 2rem;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+.travel_discribe_section p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 22px 30px;
+  line-height: 2;
+  text-align: center;
+}
+
+.travel_image_section {
+  display: flex;
+  width: 100%;
+  position: relative;
+}

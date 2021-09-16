@@ -18,7 +18,7 @@ function List({places, childClicked, isLoading, type, setType, rating, setRating
       return (
             <div className = {classes.container}>
                   <Typography variant = "h4">
-                        Find the favourite Resaurents around you
+                        Find Resaurents, Hotel, and Attraction! Enjoy your day!
                   </Typography>
                         {
                               isLoading ?(

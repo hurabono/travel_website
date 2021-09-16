@@ -30,7 +30,7 @@ function ThingsTodo() {
             >
               <ThingsTodoCard
                 name="THE CHECK LIST BEFORE YOU LEAVE"
-                src="/images/img-9.jpg"
+                src="/images/TodoThings1.jpg"
                 desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
                 path="/services"
@@ -38,7 +38,7 @@ function ThingsTodo() {
 
               <ThingsTodoCard
                 name="ONLINE EXPERIENCES"
-                src="/images/img-9.jpg"
+                src="/images/TodoThings2.jpg"
                 desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
                 path="/services"
@@ -46,7 +46,7 @@ function ThingsTodo() {
 
               <ThingsTodoCard
                 name="POPULAR EVENTS"
-                src="/images/img-9.jpg"
+                src="/images/TodoThings3.jpg"
                 desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
                 path="/services"
@@ -62,7 +62,7 @@ function ThingsTodo() {
           <Grid container justifyContent="center" className={classes.CardItems}>
             <ThingsTodoCard
               name="THE CHECK LIST BEFORE YOU LEAVE"
-              src="/images/img-9.jpg"
+              src="/images/TodoThings1.jpg"
               desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
               path="/services"
@@ -70,7 +70,7 @@ function ThingsTodo() {
 
             <ThingsTodoCard
               name="ONLINE EXPERIENCES"
-              src="/images/img-9.jpg"
+              src="/images/TodoThings2.jpg"
               desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
               path="/services"
@@ -78,7 +78,7 @@ function ThingsTodo() {
 
             <ThingsTodoCard
               name="POPULAR EVENTS"
-              src="/images/img-9.jpg"
+              src="/images/TodoThings3.jpg"
               desc="Lizards are a widespread group of squamate reptiles, with over
        6,000 species, ranging across all continents except Antarctica"
               path="/services"

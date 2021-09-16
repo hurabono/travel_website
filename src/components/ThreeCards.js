@@ -9,6 +9,7 @@ import {
   Grid,
 } from "@material-ui/core";
 import useStyles from "./ThreeCardsStyle";
+import { Link } from "react-router-dom";
 
 function ThreeCards() {
   const classes = useStyles();
@@ -28,66 +29,84 @@ function ThreeCards() {
           <Card elevation={0} className={classes.root} square>
             <CardMedia
               className={classes.media}
-              image="../images/img-9.jpg"
+              image="../images/Card1.jpg"
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                RESTAURANTS
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="large" color="primary">
-                Learn More
-              </Button>
+              <Link to="./Restaurants">
+                <Button
+                  className={classes.CardButton}
+                  size="large"
+                  color="primary"
+                >
+                  Lrearn more
+                </Button>
+              </Link>
             </CardActions>
           </Card>
 
           <Card elevation={0} className={classes.root} square>
             <CardMedia
               className={classes.media}
-              image="../images/img-9.jpg"
+              image="../images/Card2.jpg"
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                HOTEL
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="large" color="primary">
-                Learn More
-              </Button>
+              <Link to="./Hotel">
+                <Button
+                  className={classes.CardButton}
+                  size="large"
+                  color="primary"
+                >
+                  Lrearn more
+                </Button>
+              </Link>
             </CardActions>
           </Card>
 
           <Card elevation={0} className={classes.root} square>
             <CardMedia
               className={classes.media}
-              image="../images/img-9.jpg"
+              image="../images/Card3.jpg"
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                Lizard
+                ATTRACTIONS
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="large" color="primary">
-                Learn More
-              </Button>
+              <Link to="./Attraction">
+                <Button
+                  className={classes.CardButton}
+                  size="large"
+                  color="primary"
+                >
+                  Lrearn more
+                </Button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

@@ -20,12 +20,16 @@ function Header({setCoordinates}) {
             setCoordinates({lat,lng});
       }
  
-
+      const img = {
+            backgroundContainer: {
+                background:"#4dabf7"
+            }
+        };
 
 
       return (
             <div >
-                  <AppBar position = "static">
+                  <Box position = "static"  style={img.backgroundContainer}>
                               <Toolbar className = {classes.toolbar}>
                                           <Typography variant ="h5" className = {classes.title}>
                                                       Travel Information
@@ -46,7 +50,7 @@ function Header({setCoordinates}) {
                                           </Autocomplete>
                                           </Box>
                               </Toolbar>
-                  </AppBar>
+                  </Box>
             </div>
       );
 }

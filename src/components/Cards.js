@@ -3,6 +3,7 @@ import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
 import Slider from "react-slick";
+import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -68,29 +69,29 @@ function Cards() {
               <ul className="cards__items">
                 <Slider {...settings}>
                   <CardItem
-                    src="/images/img-9.jpg"
-                    text="Restaurants"
-                    label="Adventure"
-                    path="/services"
+                    src="/images/NYC.jpg"
+                    text="NEW YORK CITY"
+                    label="📍 City in New York State, USA"
+                    path="/nyc"
                   />
                   <CardItem
-                    src="/images/img-9.jpg"
-                    text="Hotel"
-                    label="Adventure"
-                    path="/services"
+                    src="/images/Barcelona.jpg"
+                    text="BARCELONA"
+                    label="📍 City in Spain"
+                    path="/barcelona"
                   />
 
                   <CardItem
-                    src="/images/img-9.jpg"
-                    text="attractions"
-                    label="Adventure"
-                    path="/services"
+                    src="/images/Rome.jpg"
+                    text="ROME"
+                    label="📍 Capital of Italy"
+                    path="/rome"
                   />
                   <CardItem
-                    src="/images/img-9.jpg"
-                    text="attractions"
-                    label="Adventure"
-                    path="/services"
+                    src="/images/Istanbul.jpg"
+                    text="ISTANBUL"
+                    label="📍 City in Turkey"
+                    path="/istanbul"
                   />
                 </Slider>
               </ul>
@@ -106,29 +107,29 @@ function Cards() {
             <div className="cards__wrapper ">
               <ul className="cards__items">
                 <CardItem
-                  src="/images/img-9.jpg"
-                  text="Restaurants"
-                  label="Adventure"
-                  path="/services"
+                  src="/images/NYC.jpg"
+                  text="NEW YORK CITY"
+                  label="📍 City in New York State, USA"
+                  path="/nyc"
                 />
                 <CardItem
-                  src="/images/img-9.jpg"
-                  text="Hotel"
-                  label="Adventure"
-                  path="/services"
+                  src="/images/Barcelona.jpg"
+                  text="BARCELONA"
+                  label="📍 City in Spain"
+                  path="/barcelona"
                 />
 
                 <CardItem
-                  src="/images/img-9.jpg"
-                  text="attractions"
-                  label="Adventure"
-                  path="/services"
+                  src="/images/Rome.jpg"
+                  text="ROME"
+                  label="📍 Capital of Italy"
+                  path="/rome"
                 />
                 <CardItem
-                  src="/images/img-9.jpg"
-                  text="attractions"
-                  label="Adventure"
-                  path="/services"
+                  src="/images/Istanbul.jpg"
+                  text="ISTANBUL"
+                  label="📍 City in Turkey"
+                  path="/istanbul"
                 />
               </ul>
             </div>

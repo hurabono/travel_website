@@ -32,7 +32,7 @@ function Banner() {
           </div>
 
           <div className="image_section">
-            <BannerItem src="/images/img-9.jpg" />
+            <BannerItem src="/images/Covid.jpg" />
           </div>
         </div>
       </div>
