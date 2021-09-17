@@ -15,7 +15,9 @@ export default makeStyles((theme) => ({
   CardSection: {
     margin: "30px 0px",
   },
-
+  cardTyping: {
+    padding: "10px 8px",
+  },
   cardWrapper: {
     width: "90%",
     margin: "4rem auto",
@@ -36,7 +38,7 @@ export default makeStyles((theme) => ({
   },
 
   title: {
-    margin: "10px 0px",
+    margin: "1rem",
     textAlign: "left",
     fontSize: "1.2rem",
     [theme.breakpoints.up("md")]: {

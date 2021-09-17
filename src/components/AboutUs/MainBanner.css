@@ -115,4 +115,8 @@
     border: none;
     min-height: auto;
   }
+
+  .mainBanner__description {
+    padding: 0;
+  }
 }

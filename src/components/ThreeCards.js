@@ -38,7 +38,7 @@ function ThreeCards() {
               image="../images/Card1.jpg"
               title="Contemplative Reptile"
             />
-            <CardContent>
+            <CardContent className={classes.cardTyping}>
               <Typography gutterBottom variant="h5" component="h2">
                 RESTAURANTS
               </Typography>
@@ -66,7 +66,7 @@ function ThreeCards() {
               image="../images/Card2.jpg"
               title="Contemplative Reptile"
             />
-            <CardContent>
+            <CardContent className={classes.cardTyping}>
               <Typography gutterBottom variant="h5" component="h2">
                 HOTEL
               </Typography>
@@ -94,7 +94,7 @@ function ThreeCards() {
               image="../images/Card3.jpg"
               title="Contemplative Reptile"
             />
-            <CardContent>
+            <CardContent className={classes.cardTyping}>
               <Typography gutterBottom variant="h5" component="h2">
                 ATTRACTIONS
               </Typography>
