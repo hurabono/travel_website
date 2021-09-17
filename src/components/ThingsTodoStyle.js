@@ -23,6 +23,7 @@ export default makeStyles((theme) => ({
   cardWrapper: {
     width: "100%",
     margin: "2rem auto",
+    overflow: "hidden",
 
     [theme.breakpoints.up("sm")]: {
       width: "90%",

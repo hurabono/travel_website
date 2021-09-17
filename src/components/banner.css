@@ -109,6 +109,7 @@
 
   .container {
     margin-bottom: 10vh;
+    overflow: hidden;
   }
 
   .discribe_section {

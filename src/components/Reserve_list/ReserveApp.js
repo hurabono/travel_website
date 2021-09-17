@@ -141,7 +141,7 @@ function ReserveApp(isLoading) {
                     className={classes.card2}
                     data-aos="fade"
                     data-aos-duration="1000"
-                    data-aos-delay="500"
+                    data-aos-delay="50"
                     data-aos-easing="linear"
                   >
                     <CardContent>

@@ -32,11 +32,11 @@ function MainBanner() {
              A TEAM OF PROFESSIONAL TRAVEL EXPERTS
             </Typography>
             
-            <Typography className="mainBanner_title" variant="h3" component="h2">
+            <Typography className="mainBanner_title" variant="h4" component="h4">
             CHOOSE YOUR DESTINATION            
             </Typography>
             
-            <p className="mainBanner__description">
+            <p className="mainBanner__description" >
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
