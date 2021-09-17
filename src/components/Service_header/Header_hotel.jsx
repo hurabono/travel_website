@@ -38,8 +38,8 @@ function Header({setCoordinates}) {
                                           <Typography variant ="h5" className = {classes.title}>
                                                       Search hotel or stays near you
                                           </Typography>
-                                          <Box  margin= "12px 0" display = "flex">
-                                                <Typography variant ="h6" className={classes.title}>
+                                          <Box  display = "flex" className = {classes.searchBox}>
+                                                <Typography variant ="h6" className={classes.subtitle} >
                                                       Explore new places
                                                 </Typography>
                                           <Autocomplete onLoad = {onLoad} onPlaceChanged = {onPlaceChanged}>

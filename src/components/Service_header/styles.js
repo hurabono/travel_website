@@ -2,6 +2,7 @@ import { alpha, makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
   title: {
+    marginTop: "22px",
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
@@ -16,6 +17,14 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       marginLeft: theme.spacing(3),
       width: "auto",
+    },
+  },
+
+  searchBox: {
+    flexDirection: "column",
+    padding: "20px",
+    [theme.breakpoints.up("sm")]: {
+      flexDirection: "initial",
     },
   },
   searchIcon: {
