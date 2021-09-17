@@ -11,6 +11,7 @@ import NYC from "./components/pages/NYC";
 import Barcelona from "./components/pages/Barcelona";
 import Rome from "./components/pages/Rome";
 import Istanbul from "./components/pages/Istanbul";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/services" component={Services} />
+        <Route path="/about-us" component={AboutUs} />
+
         <Route path="/reserve" component={Reserve} />
         <Route path="/restaurants" component={Restaurants} />
         <Route path="/hotel" component={Hotel} />

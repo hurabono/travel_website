@@ -3,7 +3,12 @@ import "./banner.css";
 import BannerItem from "./BannerItem";
 import { Typography } from "@material-ui/core";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Banner() {
+  AOS.init();
+
   return (
     <div className="container">
       <div className="banners__container">
@@ -11,7 +16,12 @@ function Banner() {
           Covid 19 news and information
         </Typography>
         <div className="banner__wrapper">
-          <div className="discribe_section">
+          <div
+            className="discribe_section"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-easing="linear"
+          >
             <Typography className="container_title" variant="h3" component="h2">
               Covid 19 news and information
             </Typography>
@@ -31,7 +41,13 @@ function Banner() {
             </ol>
           </div>
 
-          <div className="image_section">
+          <div
+            className="image_section"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            data-aos-easing="linear"
+          >
             <BannerItem src="/images/Covid.jpg" />
           </div>
         </div>

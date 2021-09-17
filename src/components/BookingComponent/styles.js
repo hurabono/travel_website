@@ -111,7 +111,7 @@ export default makeStyles((theme) => ({
       display: "flex",
       justifyContent: "center",
       flexDirection: "column",
-      minHeight: "220px",
+      minHeight: "364px",
     },
   },
 }));

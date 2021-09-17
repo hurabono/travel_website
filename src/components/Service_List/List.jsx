@@ -23,7 +23,7 @@ function List({places, childClicked, isLoading, type, setType, rating, setRating
                         {
                               isLoading ?(
                                     <div className = {classes.loading}>
-                                                <CircularProgress size = "5rem" />
+                                                <CircularProgress size = "5rem"  color="inherit"/>
                                     </div>
                               ) : (
                         <>

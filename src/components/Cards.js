@@ -3,12 +3,15 @@ import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
 import Slider from "react-slick";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function SampleNextArrow(props) {
+  AOS.init();
   const { className, style, onClick } = props;
   return (
     <div
@@ -59,7 +62,12 @@ function Cards() {
   return (
     <>
       {!isDesktop ? (
-        <div className="cards">
+        <div
+          className="cards"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          data-aos-easing="linear"
+        >
           <div className="cards__container">
             <Typography className="title" variant="h5" component="h2">
               POPULAR TRAVEL CITY
@@ -104,7 +112,12 @@ function Cards() {
             <Typography className="title" variant="h5" component="h2">
               POPULAR TRAVEL CITY
             </Typography>
-            <div className="cards__wrapper ">
+            <div
+              className="cards__wrapper "
+              data-aos="fade"
+              data-aos-duration="2000"
+              data-aos-easing="linear"
+            >
               <ul className="cards__items">
                 <CardItem
                   src="/images/NYC.jpg"

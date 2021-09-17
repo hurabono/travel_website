@@ -1,0 +1,41 @@
+.GridContainer {
+  margin: 4rem 0;
+}
+
+.typing_box {
+  background: #fafafa !important;
+}
+
+.GridTitle {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300 !important;
+}
+
+button.GridButton {
+  font-size: 18px;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 1px solid #495057;
+  margin: 20px;
+}
+
+.button_part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .MuiGrid-spacing-xs-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .GridContainer .MuiGrid-grid-xs-4 {
+    width: 100%;
+    max-width: 100%;
+  }
+}

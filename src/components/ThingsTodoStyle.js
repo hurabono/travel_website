@@ -3,7 +3,7 @@ export default makeStyles((theme) => ({
   root: {
     maxWidth: "auto",
     margin: "0px 10px",
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.up("md")]: {
       maxWidth: 350,
       margin: "0px 20px",
     },

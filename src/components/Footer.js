@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
@@ -23,7 +23,9 @@ function Footer() {
               placeholder="Your email"
             />
 
-            <Button buttonStyle="btn__outline">SUBSCRIBE</Button>
+            <Button className="footerButton" variant="outlined" size="large">
+              SUBSCRIBE
+            </Button>
           </form>
         </div>
       </section>

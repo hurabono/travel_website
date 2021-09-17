@@ -5,9 +5,13 @@ import "./Carousel.css";
 import ThingsTodoCard from "./ThingsTodoCard";
 import { Carousel } from "@trendyol-js/react-carousel";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function ThingsTodo() {
+  AOS.init();
   const classes = useStyles();
-  const isDesktop = useMediaQuery("(min-width:600px)");
+  const isDesktop = useMediaQuery("(min-width:769px)");
 
   <Typography className={classes.title} variant="h5" component="h2">
     EXPLORE NEAR BY
@@ -59,7 +63,14 @@ function ThingsTodo() {
           <Typography className={classes.title} variant="h5" component="h2">
             DISCOVER THINGS TO DO
           </Typography>
-          <Grid container justifyContent="center" className={classes.CardItems}>
+          <Grid
+            container
+            justifyContent="center"
+            className={classes.CardItems}
+            data-aos="fade"
+            data-aos-duration="2000"
+            data-aos-easing="linear"
+          >
             <ThingsTodoCard
               name="THE CHECK LIST BEFORE YOU LEAVE"
               src="/images/TodoThings1.jpg"

@@ -10,13 +10,23 @@ import {
 } from "@material-ui/core";
 import useStyles from "./ThreeCardsStyle";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ThreeCards() {
+  AOS.init();
   const classes = useStyles();
 
   return (
     <>
-      <Grid container className={classes.cardWrapper} maxWidth="sm">
+      <Grid
+        container
+        className={classes.cardWrapper}
+        maxWidth="sm"
+        data-aos="fade"
+        data-aos-duration="2000"
+        data-aos-easing="linear"
+      >
         <Typography className={classes.title} variant="h5" component="h2">
           EXPLORE NEAR BY
         </Typography>

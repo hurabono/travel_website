@@ -95,6 +95,12 @@
   color: #b1b1b1;
 }
 
+button.footerButton {
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1rem;
+}
+
 /* Social Icons */
 .social-icon-link {
   color: #fff;
@@ -171,4 +177,8 @@
 }
 
 @media screen and (max-width: 768px) {
+  button.footerButton {
+    display: block;
+    width: 100%;
+  }
 }

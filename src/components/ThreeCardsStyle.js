@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 export default makeStyles((theme) => ({
   root: {
-    maxWidth: 370,
+    maxWidth: 607,
     margin: "15px 20px",
 
     [theme.breakpoints.up("md")]: {

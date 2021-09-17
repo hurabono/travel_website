@@ -110,4 +110,9 @@
   .container {
     margin-bottom: 10vh;
   }
+
+  .discribe_section {
+    margin-top: 22px;
+    margin-bottom: 0px;
+  }
 }

@@ -1,0 +1,117 @@
+.mainBanner__container {
+  max-width: 1280px;
+  margin: 3rem auto;
+  min-height: 1000px;
+}
+
+.mainBanner__wrapper {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* image */
+
+.mainBanner_image_section {
+  display: flex;
+  width: 100%;
+  position: relative;
+  left: 150px;
+  height: 721px;
+}
+
+.image_wrapper {
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  overflow: hidden;
+  padding-top: 100%;
+}
+
+.banner__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* describe  */
+
+.mainBanner_discribe_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+  margin: 22px;
+  background-color: #fafafa;
+  min-height: 496px;
+  z-index: 1;
+  position: relative;
+  top: 296px;
+  right: 68px;
+  border-bottom: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+}
+
+.mainBanner_sub_title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.mainBanner_title h2 {
+  font-size: 2rem;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+.mainBanner__description p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px 30px;
+  line-height: 2;
+  text-align: left;
+  list-style-type: disc;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainBanner__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainBanner_image_section {
+    display: flex;
+    width: 100%;
+    position: relative;
+    left: 0px;
+    height: auto;
+  }
+
+  .mainBanner__container {
+    margin-bottom: 5vh;
+    min-height: auto;
+  }
+
+  .mainBanner_discribe_section {
+    margin-top: 22px;
+    margin-bottom: 0px;
+    top: 0px;
+    right: 0px;
+    border: none;
+    min-height: auto;
+  }
+}
